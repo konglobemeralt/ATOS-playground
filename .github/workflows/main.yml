@@ -28,7 +28,6 @@ jobs:
         sudo apt update
         sudo apt install -y python3-pip
         sudo apt-get -y install ament-cmake
-        pip3 install ament_cmake
         pip3 install colcon-common-extensions
         colcon build
 
