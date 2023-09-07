@@ -2,7 +2,7 @@ name: ROS Build
 on:
   push:
     branches:
-      - feature_CI_tests  # Adjust this branch name as needed
+      - dev  # Adjust this branch name as needed
 
 jobs:
   build:
