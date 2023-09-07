@@ -1,4 +1,6 @@
 name: ROS Build
+env:
+  ROS_DISTRO: 'foxy'
 on:
   push:
     branches:
@@ -20,6 +22,7 @@ jobs:
         colcon: true
 
     - name: Build
+    
       run: |
         colcon build
 
