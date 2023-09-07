@@ -20,6 +20,7 @@ jobs:
       with:
         rosdistro: humble
         colcon: true
+        cmake-version: '3.16.x'
 
     - name: Build
     
