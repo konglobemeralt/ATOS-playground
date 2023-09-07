@@ -25,6 +25,10 @@ jobs:
     - name: Build
     
       run: |
+        sudo apt update
+        sudo apt install -y python3-pip
+        pip3 install ament_cmake
+        pip3 install colcon-common-extensions
         colcon build
 
     - name: Run Tests
