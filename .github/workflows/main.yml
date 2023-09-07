@@ -16,7 +16,7 @@ jobs:
     - name: Set up ROS
       uses: ros-tooling/setup-ros@v0.7
       with:
-        rosdistro: foxy
+        rosdistro: humble
         colcon: true
 
     - name: Build
@@ -25,5 +25,5 @@ jobs:
 
     - name: Run Tests
       run: |
-        source /opt/ros/foxy/setup.bash
+        source /opt/ros/humble/setup.bash
         colcon test
