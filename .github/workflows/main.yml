@@ -22,7 +22,16 @@ jobs:
         colcon: true
         cmake-version: '3.16.x'
         ament-version: '2,0'
+        
+    - name: Set up ROS 2
+      run: |
+              sudo apt update
+              sudo apt install -y python3-pip
+              pip3 install -U colcon-common-extensions
+              source /opt/ros/foxy/setup.bash  # Adjust to your ROS 2 distribution
+      shell: bash
 
+        
     - name: Build
       run: |
         sudo apt update
