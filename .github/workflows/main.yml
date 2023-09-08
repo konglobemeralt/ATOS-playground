@@ -1,6 +1,6 @@
 name: ROS Build
 env:
-  ROS_DISTRO: 'foxy'
+  ROS_DISTRO: 'foxey'
 on:
   push:
     branches:
