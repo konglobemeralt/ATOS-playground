@@ -33,11 +33,11 @@ esac
 # Prompt user to acknowledge installation
 echo "This script will try to install all necessary dependencies for ATOS. Please open and inspect this script for further details."
 echo "ROS distribution: $ROS_DISTRO"
-read -p "Do you wish to continue? [Y/n] " -n 1 -r
-echo
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    exit 1
-fi
+# read -p "Do you wish to continue? [Y/n] " -n 1 -r
+# echo
+#if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+#    exit 1
+# fi
 
 #######################################
 ###### Install ATOS dependencies ######
