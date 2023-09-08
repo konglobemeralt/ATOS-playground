@@ -21,14 +21,7 @@ jobs:
         rosdistro: humble
         colcon: true
         cmake-version: '3.16.x'
-
-
-    - name: Set up ROS
-      run: |
-        sudo apt update
-        sudo apt install -y python3-pip
-        pip3 install colcon-common-extensions
-      shell: bash
+        ament-version: '2,0'
 
     - name: Build
       run: |
