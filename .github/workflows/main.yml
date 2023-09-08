@@ -30,13 +30,13 @@ jobs:
           pip3 install colcon-common-extensions
           colcon list         
           colcon build
+        shell: bash
         
     - name: Set up ROS 2
       run: |
               sudo apt update
               sudo apt install -y python3-pip
               pip3 install -U colcon-common-extensions
-              source /opt/ros/foxy/setup.bash  # Adjust to your ROS 2 distribution
       shell: bash
 
         
