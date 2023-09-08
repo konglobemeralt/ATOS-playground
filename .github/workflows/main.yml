@@ -22,6 +22,14 @@ jobs:
         colcon: true
         cmake-version: '3.16.x'
         ament-version: '2,0'
+
+        run: |
+          sudo apt update
+          sudo apt install -y python3-pip
+          sudo apt-get -y install ament-cmake
+          pip3 install colcon-common-extensions
+          colcon list         
+          colcon build
         
     - name: Set up ROS 2
       run: |
