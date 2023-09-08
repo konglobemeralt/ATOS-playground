@@ -232,11 +232,11 @@ update_symlink "$ATOS_INTERFACES_PATH" ~/atos_ws/src/atos_interfaces
 
 # Change directory into the workspace and build, check with the user before continuing
 echo "Dependecy installation done and ATOS workspace created."
-read -p "Do you wish to continue by installing ATOS with colcon? [Y/n] " -n 1 -r
-echo
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    exit 1
-fi
+#read -p "Do you wish to continue by installing ATOS with colcon? [Y/n] " -n 1 -r
+#echo
+#if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+#    exit 1
+#fi
 
 # First make sure the submodules are up to date
 echo "Updating submodules to make sure they are up to date..."
