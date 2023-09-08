@@ -17,7 +17,7 @@ jobs:
         
     - name: Build
       run: |
-        ./install_atos.sh
+        ./install_atos.sh -y
         colcon list         
         colcon build
 
