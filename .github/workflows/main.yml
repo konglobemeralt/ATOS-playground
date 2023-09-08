@@ -28,7 +28,6 @@ jobs:
         sudo apt update
         sudo apt install -y python3-pip
         pip3 install colcon-common-extensions
-        source /opt/ros/foxy/setup.bash
       shell: bash
 
     - name: Build
