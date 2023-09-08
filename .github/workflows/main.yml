@@ -23,13 +23,6 @@ jobs:
         cmake-version: '3.16.x'
 
 
-    - name: Install ament-cmake
-      run: |
-        sudo apt install -y python3-pip
-        pip3 install -U ament-cmake
-      shell: bash
-
-
     - name: Set up ROS
       run: |
         sudo apt update
