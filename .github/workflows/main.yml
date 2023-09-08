@@ -14,38 +14,10 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
-    - name: Set up ROS
-      uses: ros-tooling/setup-ros@v0.7
-      with:
-        rosdistro: humble
-        colcon: true
-        cmake-version: '3.16.x'
-        ament-version: '2,0'
-
-        run: |
-          sudo apt update
-          sudo apt install -y python3-pip
-          sudo apt-get -y install ament-cmake
-          pip3 install colcon-common-extensions
-          colcon list         
-          colcon build
-        shell: bash
-        
-    - name: Set up ROS 2
-      run: |
-              sudo apt update
-              sudo apt install -y python3-pip
-              pip3 install -U colcon-common-extensions
-      shell: bash
-
         
     - name: Build
       run: |
-        sudo apt update
-        sudo apt install -y python3-pip
-        sudo apt-get -y install ament-cmake
-        pip3 install colcon-common-extensions
+        ./install_atos.sh
         colcon list         
         colcon build
 
